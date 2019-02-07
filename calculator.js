@@ -60,3 +60,31 @@ function clearScreen(){
   document.getElementById('input').value = "";
   document.getElementById('answer').value = "";
 }
+
+//backspace function
+function backspace(){
+  var input_var = document.getElementById('input');
+  var x = input_var.value;
+  if (x.length > 0){
+    x = x.substring(0, x.length-1); //remove the last character in input
+    input_var.value = x;
+  }
+}
+
+function compute() {
+  var input_var = document.getElementById('input');
+  ans = Math.floor(+eval(input_var.value));
+  document.getElementById('answer').value = '=' + ans;
+}
+
+var i = 0;
+function brackets() {
+  var input_var = document.getElementById('input');
+  if(i == 0){
+    input_var.value += '(';
+    i = 1;
+  }
+  else if (i==1){
+    input_var.value +=')';
+  }
+}
