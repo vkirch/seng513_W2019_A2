@@ -1,3 +1,7 @@
+function myFunction() {
+  alert("Hello! I am an alert box!");
+}
+
 function getNumber(num){
   var input_var = document.getElementById('input');
   switch(num){
@@ -41,7 +45,7 @@ function getOperand(operand){
     case '+':
       input_var.value += '+';
       break;
-    case '-';
+    case '-':
       input_var.value += '-';
       break;
     case 'x':
