@@ -1,5 +1,5 @@
 table{
-  width:310px;
+  width: 600px;
   margin: 50px auto;
   background: #663399;
   border: none;
@@ -8,13 +8,13 @@ table{
 }
 .heading{
   color:white;
-  font-size: 130%;
+  font-size: 230%;
   text-align: center;
 }
 #input, #answer{
-  width:260px;
+  width:550px;
   height: 50px;
-  font-size: 210%;
+  font-size: 230%;
   text-align: right;
   border: none;
 }
@@ -29,10 +29,10 @@ table{
   box-shadow: 2px 2px 2px black;
 }
 input[type=button]{
-  height: 60px;
-  width: 60px;
+  height: 133px;
+  width: 133px;
   color: blue;
-  font-size: 130%;
+  font-size: 230%;
   background: white;
   margin: 1px;
   border-radius: 8px;

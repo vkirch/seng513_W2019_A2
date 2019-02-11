@@ -1,7 +1,3 @@
-function myFunction() {
-  alert("Hello! I am an alert box!");
-}
-
 function getNumber(num){
   var input_var = document.getElementById('input');
   switch(num){
@@ -77,8 +73,14 @@ function backspace(){
 
 function compute() {
   var input_var = document.getElementById('input');
-  ans = Math.floor(+eval(input_var.value));
-  document.getElementById('answer').value = '=' + ans;
+  try{
+    ans = Math.fround(eval(input_var.value)).toFixed(2);
+    document.getElementById('answer').value = '=' + ans;
+    document.getElementById('input').value = ans;
+  }
+  catch(err){
+    error();
+  }
 }
 
 var i = 0;
@@ -91,4 +93,18 @@ function brackets() {
   else if (i==1){
     input_var.value +=')';
   }
+}
+
+var i = 0;
+function decimal(){
+  var input_var = document.getElementById('input');
+  if (i == 0){
+    input_var.value += '.';
+  }
+  else{}
+}
+
+function error(){
+  var input_var = document.getElementById('input');
+  input_var.value += 'ERROR';
 }
